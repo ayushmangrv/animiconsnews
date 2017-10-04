@@ -1,0 +1,336 @@
+.circ{
+
+    height: 500px;
+    width: 500px;
+    border-radius: 50%;
+    display: block;
+    position: relative;
+    background-color: gray;
+    margin: 0px auto;
+
+
+}
+
+.wrap{
+
+    height: 300px;
+    width: 800px;
+    margin: 0px auto;
+    position: relative;
+    padding-top: 10%;
+}
+
+.cake{
+    height: 60%;
+    width: 30%;
+    background-color: #E7D7C1;
+    border-radius: 15%;
+    margin: 0px auto;
+    margin-top: 0px;
+}
+
+.can{
+    height: 15%;
+    width: 3%;
+    background-color: #e8e0e0;
+    border-radius: 15%;
+    position: relative;
+    left: 50%;
+    top: -30%;
+    z-index: 34;
+
+}
+
+
+.flame	{
+	height: 8%;
+    width: 8%;
+    background: radial-gradient(#FFEB3B, #FFC107, #FF9800);
+    border-radius: 0% 100% 0% 100%;
+    position: relative;
+    left: 47%;
+    top: -35%;
+    transform: rotateZ(233deg);
+    opacity: 0.7;
+    animation: flicker ease-in-out infinite 1.5s;
+}
+
+@keyframes flicker{
+
+	0%{height: 5%; transform: rotateZ(233deg);}	
+	40%{height: 4%; transform: rotateZ(240deg);}
+	100%{height: 5%; transform: rotateZ(233deg);}
+}
+
+.drkcake{
+	height: 30%;
+    width: 100%;
+    background-color: #BF4342;
+    border-radius: 5%;
+    margin: 0px auto;
+    margin-top: 0px;
+    position: relative;
+    top: 14%;
+    z-index: 6;
+
+}
+
+
+.crm{
+	height: 27%;
+    width: 100%;
+    background-color: #8C1C13;
+    border-radius: 28%;
+    display: block;
+    position: relative;
+    top: -5%;
+}
+
+.drp1{
+    height: 120%;
+    width: 10%;
+    background-color: #8C1C13;
+    border-radius: 108% / 43%;
+    display: inline-block;
+    position: absolute;
+    top: 19%;
+    left: -2%;
+    z-index: 7;
+}
+
+
+
+.drp2{
+    height: 115%;
+    width: 12%;
+    background-color: #8C1C13;
+    border-radius: 108% / 43%;
+    display: inline-block;
+    position: absolute;
+    top: 0%;
+    left: 22%;
+    z-index: 7;
+}
+
+
+.drp3{
+	height: 100%;
+    width: 12%;
+    background-color: #8C1C13;
+    border-radius: 108% / 43%;
+    display: inline-block;
+    position: absolute;
+    top: 21%;
+    left: 46%;
+    z-index: 7;
+    animation: drptre ease-in-out infinite 2s;
+   	animation-delay: 0.1s
+}
+
+
+@keyframes drptre{
+
+	0% {height: 100%;}
+	100% {height: 140%;}
+
+}
+
+.drp4{
+    height: 190%;
+    width: 12%;
+    background-color: #8C1C13;
+    border-radius: 108% / 43%;
+    display: inline-block;
+    position: absolute;
+    top: 60%;
+    left: 70%;
+    z-index: 7;
+    animation: drpqu ease-in-out infinite 2s;
+    animation-delay: 0.2s       
+}
+
+@keyframes drpqu{
+
+	0% {height: 90%;}
+	100% {height: 170%;}
+
+}
+
+.drp5{
+    height: 105%;
+    width: 12%;
+    background-color: #8C1C13;
+    border-radius: 108% / 43%;
+    display: inline-block;
+    position: absolute;
+    top: 14%;
+    left: 89%;
+    z-index: 7;
+}
+
+.gp1{
+    height: 222%;
+    width: 14%;
+    background-color: #E7D7C1;
+    border-radius: 108% / 43%;
+    display: inline-block;
+    position: absolute;
+    top: 59%;
+    left: 8%;
+    z-index: 5;
+}
+
+
+.gp2{
+	height: 171%;
+    width: 12%;
+    background-color: #E7D7C1;
+    border-radius: 108% / 43%;
+    display: inline-block;
+    position: absolute;
+    top: 75%;
+    left: 34%;
+    z-index: 5;
+}
+
+
+.gp3{
+    height: 213%;
+    width: 12%;
+    background-color: #E7D7C1;
+    border-radius: 108% / 25%;
+    display: inline-block;
+    position: absolute;
+    top: 83%;
+    left: 58%;
+    z-index: 5;
+}
+
+.gp4{
+    height: 82%;
+    width: 7%;
+    background-color: #E7D7C1;
+    border-radius: 108% / 43%;
+    display: inline-block;
+    position: absolute;
+    top: 79%;
+    left: 82%;
+    z-index: 5;
+}
+
+.conf{
+
+	height: 11%;
+    width: 3%;
+    display: inline-block;
+    z-index: 8;
+
+}
+
+#cf1{
+
+    height: 4%;
+    width: 2%;
+    background-color: #17183B;
+    border-radius: 135%;
+    display: inline-block;
+    z-index: 18;
+    position: absolute;
+    transform: skewY(160deg) translateY(0%);
+    animation: confettiu ease-in infinite 1.5s;       
+}
+
+@keyframes confettiu{
+
+	0% {transform: skewY(160deg) translateY(-1900%) rotateX(70deg); opacity: 1;}
+	100% {transform: skewY(160deg) translateY(100%) rotateX(170deg);opacity: 0.5;}
+
+}	
+
+#cf2{
+
+ 	height: 4%;
+    width: 2%;
+    background-color: #A11692;
+    border-radius: 135%;    
+    display: inline-block;
+    z-index: 18;
+    position: absolute;
+    transform: skewY(-160deg) translateY(0%);
+    animation: confettiu ease-in infinite 1.5s;
+    right: 23%;   
+    animation-delay: 0.3s;  
+}
+
+@keyframes confettiu{
+
+	0% {transform: skewY(-160deg) translateY(-1900%) rotateX(-70deg);opacity: 1;}
+	100% {transform: skewY(-160deg) translateY(100%) rotateX(-170deg);opacity: 0.5;}
+
+}
+
+#cf3{
+
+	height: 4%;
+    width: 2%;
+    background-color: #FF4F79;
+    border-radius: 135%;    
+    display: inline-block;
+    z-index: 18;
+    position: absolute;
+    transform: skewY(160deg) translateY(0%);
+    animation: confettiu ease-in infinite 1.5s;
+    animation-delay: 0.4s;
+    right: 45%;  
+}
+
+@keyframes confettiu{
+
+	0% {transform: skewY(-160deg) translateY(-1900%) rotateX(-70deg);opacity: 1;}
+	100% {transform: skewY(-160deg) translateY(100%) rotateX(-170deg);opacity: 0.5;}
+
+}
+
+#cf4{
+
+	height: 4%;
+    width: 2%;
+    background-color: #7D90A5;
+    border-radius: 135%;    
+    display: inline-block;
+    z-index: 18;
+    position: absolute;
+    transform: skewY(160deg) translateY(0%);
+    animation: confettiu ease-in infinite 1.5s;
+    animation-delay: 0.5s;
+    right: 30%;  
+}
+
+@keyframes confettiu{
+
+	0% {transform: skewY(-160deg) translateY(-1900%) rotateX(-70deg);opacity: 1;}
+	100% {transform: skewY(-160deg) translateY(100%) rotateX(-170deg);opacity: 0.5;}
+
+}
+
+#cf5{
+
+	height: 4%;
+    width: 2%;
+    background-color: #FFB49A;
+    border-radius: 135%;    
+    display: inline-block;
+    z-index: 18;
+    position: absolute;
+    transform: skewY(160deg) translateY(0%);
+    animation: confettiu ease-in infinite 1.5s;
+    animation-delay: 0.5s;
+    right: 65%;  
+}
+
+@keyframes confettiu{
+
+	0% {transform: skewY(-160deg) translateY(-1900%) rotateX(-70deg);opacity: 1;}
+	100% {transform: skewY(-160deg) translateY(100%) rotateX(-170deg);opacity: 0.5;}
+
+}
